@@ -20,6 +20,47 @@ class ProfileCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            Row(
+              children: <Widget>[
+                CircleAvatar(
+                  backgroundImage: AssetImage('assets/avi.jpg'),
+                  radius: 40.0,
+                ),
+                SizedBox(width: 50.0),
+                Text(
+                  '24',
+                  style: TextStyle(
+                    color: Colors.white,
+                    letterSpacing: 2.0,
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(width: 50.0),
+                Text(
+                  '743',
+                  style: TextStyle(
+                    color: Colors.white,
+                    letterSpacing: 2.0,
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(width: 50.0),
+                Text(
+                  '160',
+                  style: TextStyle(
+                    color: Colors.white,
+                    letterSpacing: 2.0,
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
+            Divider(
+              height: 20.0,
+            ),
             Text(
               'Caro | Self-Taught Dev',
               style: TextStyle(
@@ -35,8 +76,6 @@ class ProfileCard extends StatelessWidget {
               style: TextStyle(
                 color: Colors.grey[400],
                 letterSpacing: 2.0,
-                // fontSize: 28.0,
-                // fontWeight: FontWeight.bold,
               ),
             ),
             SizedBox(height: 5.0),
@@ -101,6 +140,14 @@ class ProfileCard extends StatelessWidget {
                   child: Text('Insights'),
                   textColor: Colors.tealAccent[400],
                   color: Colors.indigoAccent,
+                ),
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                FlatButton(
+                  onPressed: () {},
+                  child: Text('Hello'),
                 ),
               ],
             ),
