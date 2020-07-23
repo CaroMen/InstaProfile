@@ -22,11 +22,14 @@ class ProfileCard extends StatelessWidget {
           children: <Widget>[
             Row(
               children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.fromLTRB(2.0, 50.0, 2.0, 2.0),
+                ),
                 CircleAvatar(
                   backgroundImage: AssetImage('assets/avi.jpg'),
                   radius: 40.0,
                 ),
-                SizedBox(width: 50.0),
+                SizedBox(width: 38.0),
                 Text(
                   '24',
                   style: TextStyle(
@@ -55,6 +58,51 @@ class ProfileCard extends StatelessWidget {
                     fontSize: 18.0,
                     fontWeight: FontWeight.bold,
                   ),
+                ),
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.only(left: 110.0),
+                ),
+                Text(
+                  'Posts',
+                  style: TextStyle(
+                    color: Colors.white,
+                    letterSpacing: 2.0,
+                    fontSize: 14.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.only(left: 113.0),
+                    ),
+                    Text(
+                      'Followers',
+                      style: TextStyle(
+                        color: Colors.white,
+                        letterSpacing: 2.0,
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+                Column(
+                  children: <Widget>[
+                    Text(
+                      'Following',
+                      style: TextStyle(
+                        color: Colors.white,
+                        letterSpacing: 2.0,
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
