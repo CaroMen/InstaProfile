@@ -23,7 +23,7 @@ class ProfileCard extends StatelessWidget {
             Row(
               children: <Widget>[
                 Padding(
-                  padding: EdgeInsets.fromLTRB(2.0, 50.0, 2.0, 2.0),
+                  padding: EdgeInsets.fromLTRB(0, 10.0, 2.0, 0),
                 ),
                 CircleAvatar(
                   backgroundImage: AssetImage('assets/avi.jpg'),
@@ -59,12 +59,16 @@ class ProfileCard extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+                // SizedBox(width: 50.0),
               ],
+            ),
+            Divider(
+              height: 0,
             ),
             Row(
               children: <Widget>[
                 Padding(
-                  padding: EdgeInsets.only(left: 110.0),
+                  padding: EdgeInsets.only(left: 110.0, top: 0),
                 ),
                 Text(
                   'Posts',
@@ -188,14 +192,6 @@ class ProfileCard extends StatelessWidget {
                   child: Text('Insights'),
                   textColor: Colors.tealAccent[400],
                   color: Colors.indigoAccent,
-                ),
-              ],
-            ),
-            Row(
-              children: <Widget>[
-                FlatButton(
-                  onPressed: () {},
-                  child: Text('Hello'),
                 ),
               ],
             ),
